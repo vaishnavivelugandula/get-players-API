@@ -1,2 +1,27 @@
 ###
 GET http://localhost:3003/players/
+
+###
+POST http://localhost:3003/players/
+Content-Type:application/json
+
+{
+    "playerName":"Shiva",
+    "jerseyNumber":22,
+    "role":"Bowler"
+}
+
+###
+GET http://localhost:3003/players/2/
+
+###
+PUT http://localhost:3003/players/2/
+Content-Type:application/json
+
+{
+    "playerName":"Hanish",
+    "role":"Bowler"
+}
+
+###
+DELETE http://localhost:3003/players/1/
